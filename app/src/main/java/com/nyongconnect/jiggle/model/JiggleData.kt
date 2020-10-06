@@ -11,6 +11,6 @@ class Transaction(var userId :String, var transaction_amount : Int, var transact
         return transaction_title
     }
 }
-class Account(var userId : String, var flexBalance : Double, var budgetBalance : Double){
+class Account(var userId : String, var flexBalance : Int, var budgetBalance : Int){
 
 }

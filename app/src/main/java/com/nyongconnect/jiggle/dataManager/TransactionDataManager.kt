@@ -3,6 +3,7 @@ package com.nyongconnect.jiggle.dataManager
 import com.nyongconnect.jiggle.model.Account
 import com.nyongconnect.jiggle.model.Transaction
 import com.nyongconnect.jiggle.model.User
+import java.text.DecimalFormat
 
 
 class TransactionDataManager {
@@ -32,7 +33,8 @@ class TransactionDataManager {
     }
 
     private fun initializeAccounts(){
-        var account = Account("nyong123",2000.0, 80000.0)
+        var account = Account("nyong123",2000, 80000)
         accounts.add(account)
+
     }
 }

@@ -10,6 +10,9 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.nyongconnect.jiggle.adapter.TransactionAdapter
 import com.nyongconnect.jiggle.dataManager.TransactionDataManager
+import java.text.DecimalFormat
+import java.text.NumberFormat
+import java.util.*
 
 class HomeFragment : Fragment() {
 
@@ -42,9 +45,11 @@ class HomeFragment : Fragment() {
         private fun DisplayDummyData(
         ) {
             val myAdapter = TransactionAdapter(dataManager.transactions)
+            val formatter = DecimalFormat("#,###")
+
             mDisplayWelcomeNote.setText("Welcome " + getCurrentUserName(dataManager))
-            mDisplayBudgetBalance.setText("N" + getBudgetBalance(dataManager))
-            mDisplayFlexBalance.setText("N" + getFlexBalance(dataManager))
+            mDisplayBudgetBalance.setText("\u20A6" +formatter.format(getBudgetBalance(dataManager)))
+            mDisplayFlexBalance.setText("\u20A6" +formatter.format(getFlexBalance(dataManager)))
 
             rvTransactions.apply {
                 setHasFixedSize(true)

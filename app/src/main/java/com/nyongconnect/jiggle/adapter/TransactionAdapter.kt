@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.nyongconnect.jiggle.R
 import com.nyongconnect.jiggle.adapter.TransactionAdapter.*
 import com.nyongconnect.jiggle.model.Transaction
+import java.text.DecimalFormat
 
 class TransactionAdapter(private val transactions : ArrayList<Transaction>) : RecyclerView.Adapter<TransactionAdapterViewHolder>() {
 
@@ -27,7 +28,11 @@ class TransactionAdapter(private val transactions : ArrayList<Transaction>) : Re
 
         holder.displayTransactionTitle.setText(transactions.get(position).transaction_title + " ")
         holder.displayTransactionDescription.setText(transactions.get(position).transaction_description)
-        holder.displayTransactionAmount.setText("N" +(transactions.get(position).transaction_amount))
+        holder.displayTransactionAmount.setText(displayCurrency(transactions.get(position).transaction_amount))
+    }
+    private fun displayCurrency(number: Int) : String{
+        val formatter = DecimalFormat("#,###")
+        return "\u20A6"+formatter.format(number)
     }
 
 
@@ -35,8 +40,6 @@ class TransactionAdapter(private val transactions : ArrayList<Transaction>) : Re
         val displayTransactionTitle : TextView = itemView.findViewById(R.id.tv_transaction_title)
         val displayTransactionDescription : TextView = itemView.findViewById(R.id.tv_transaction_description)
         val displayTransactionAmount : TextView = itemView.findViewById(R.id.tv_transaction_amount)
-
-
     }
 
 }

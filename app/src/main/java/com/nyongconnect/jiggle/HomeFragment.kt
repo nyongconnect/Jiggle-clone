@@ -14,7 +14,7 @@ import java.text.DecimalFormat
 import java.text.NumberFormat
 import java.util.*
 
-class HomeFragment : Fragment() {
+class HomeFragment : Fragment(){
 
     private lateinit var rvTransactions : RecyclerView
 
@@ -32,14 +32,13 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         dataManager = TransactionDataManager()
         mDisplayWelcomeNote = view.findViewById(R.id.tv_display_user_welcome_note)
         mDisplayFlexBalance = view.findViewById(R.id.tv_display_flex_balance)
         mDisplayBudgetBalance = view.findViewById(R.id.tv_display_budget_balance)
         rvTransactions = view.findViewById<RecyclerView>(R.id.rv_transaction)
-
     }
+
 
 
         private fun DisplayDummyData(

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/color_white</color>
+    <color name="colorPrimaryDark">@color/color_white</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="color_text_header">#00255E</color>
+    <color name="quick_text_background">#F8F9FB</color>
+    <color name="color_purchase">#FDDEB0</color>
+    <color name="color_image_background">#EEF5FE</color>
+    <color name="color_quick_action_border">#F2F2F2</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="colorPrimaryLight">#1571FF</color>
+    <color name="meal_budget_primary_color">#768091</color>
+    <color name="color_flex_balance">#3A4B64</color>
+    <color name="color_transaction_description">#B6BBC3</color>
+    <color name="bottom_nav_icon_color">#B2B2B2</color>
+    <color name="text_view_today">#828282</color>
+    <color name="meal_body_text">#6A7490</color>
+    <color name="color_visibility_icon">#768091</color>
+    <color name="account_box_text_color">#D1E3FF</color>
+
+</resources>

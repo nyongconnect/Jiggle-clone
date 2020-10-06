@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="Home"
+        android:icon="@drawable/ic_home_vector"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:title="Bills"
+        android:icon="@drawable/ic_bills"
+        app:showAsAction="always"
+        />
+    <item
+        android:title="Wallet"
+        android:icon="@drawable/ic_wallet"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:title="Support"
+        android:icon="@drawable/ic_support"
+        app:showAsAction="always"
+        />
+
+</menu>

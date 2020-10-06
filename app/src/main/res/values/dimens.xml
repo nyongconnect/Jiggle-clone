@@ -1,0 +1,32 @@
+<resources>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="quick_text_top_padding">14dp</dimen>
+    <dimen name="quick_text_bottom_padding">8dp</dimen>
+    <dimen name="standard_dimen">24dp</dimen>
+
+    <dimen name="standard_menu_image_dimen">32dp</dimen>
+    <dimen name="standard_eight">8dp</dimen>
+
+
+
+<!--    newly declared text dimens-->
+    <dimen name="welcome_text_size">18sp</dimen>
+    <dimen name="hide_balance_text_size">11sp</dimen>
+    <dimen name="heading_text_size">14sp</dimen>
+
+    <dimen name="update_body_text_size">10sp</dimen>
+    <dimen name="update_button_text_size">9sp</dimen>
+
+    <dimen name="pay_bill_body_text_size">12sp</dimen>
+
+    <dimen name="meal_budget_text_size">13sp</dimen>
+
+    <dimen name="today_text_size">15sp</dimen>
+
+
+
+
+
+</resources>

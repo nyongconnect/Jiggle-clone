@@ -25,15 +25,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 android:background="@color/colorPrimary"
+                android:contentDescription="@string/person"
                 app:layout_anchorGravity="center"
                 app:layout_scrollFlags="scroll|enterAlways|snap"
                 app:popupTheme="@style/AppTheme.PopupOverlay">
+
                 <ImageView
                     android:layout_width="@dimen/standard_menu_image_dimen"
                     android:layout_height="@dimen/standard_menu_image_dimen"
-                    android:layout_marginLeft="@dimen/standard_dimen"
+                    android:layout_marginStart="@dimen/standard_dimen"
                     android:background="@drawable/image_background"
-                    android:src="@drawable/ic_person"/>
+                    android:contentDescription="@string/person"
+                    android:src="@drawable/ic_person" />
 
             </androidx.appcompat.widget.Toolbar>
         </com.google.android.material.appbar.AppBarLayout>
@@ -41,8 +44,8 @@
         <FrameLayout
             android:id="@+id/fragment_layout"
             android:layout_width="match_parent"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         </FrameLayout>
 
@@ -54,14 +57,14 @@
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:background="@color/color_white"
         android:elevation="2dp"
-        app:itemIconSize="20dp"
+        android:theme="@style/Widget.BottomNavigationView"
         app:itemHorizontalTranslationEnabled="false"
+        app:itemIconSize="20dp"
         app:itemIconTint="@color/bottom_nav_color"
         app:itemTextColor="@color/bottom_nav_color"
         app:labelVisibilityMode="labeled"
-        android:layout_alignParentBottom="true"
-        android:theme="@style/Widget.BottomNavigationView"
         app:menu="@menu/bottom_navigation_menu" />
 </RelativeLayout>

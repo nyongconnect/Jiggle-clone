@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     style="?attr/actionButtonStyle"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -13,6 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:contentDescription="@string/action_notification"
         android:src="@drawable/ic_notifications"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,13 +22,13 @@
 
     <TextView
         android:id="@+id/notification_badge"
-        android:layout_width="10dp"
-        android:layout_height="10dp"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
         android:background="@drawable/badge_background"
         android:gravity="center"
-        android:text="10"
+        android:text="@string/number_ten"
         android:textColor="@android:color/white"
-        android:textSize="6sp"
+        android:textSize="@dimen/update_body_text_size"
         app:layout_constraintStart_toStartOf="@+id/imageView7"
         app:layout_constraintTop_toTopOf="@+id/imageView7" />
 

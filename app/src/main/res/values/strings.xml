@@ -131,4 +131,9 @@
     <string name="features_and_improvement">Get all recent features and improvements</string>
     <string name="button_update_text">Update Now</string>
     <string name =  "naira_sign"><strike>N</strike></string>
+    <string name="transaction_image">Transaction Image</string>
+    <string name="card_image">Card Image</string>
+    <string name="visibility">visibility image</string>
+    <string name="number_ten">10</string>
+    <string name="person">person</string>
 </resources>

@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.nyongconnect.jiggle.R
-import com.nyongconnect.jiggle.adapter.TransactionAdapter.*
+import com.nyongconnect.jiggle.adapter.TransactionAdapter.TransactionAdapterViewHolder
 import com.nyongconnect.jiggle.model.Transaction
 import java.text.DecimalFormat
 
@@ -26,7 +26,7 @@ class TransactionAdapter(private val transactions : ArrayList<Transaction>) : Re
 
     override fun onBindViewHolder(holder: TransactionAdapterViewHolder, position: Int) {
 
-        holder.displayTransactionTitle.setText(transactions.get(position).transaction_title + " ")
+        holder.displayTransactionTitle.setText(transactions.get(position).transaction_title)
         holder.displayTransactionDescription.setText(transactions.get(position).transaction_description)
         holder.displayTransactionAmount.setText(displayCurrency(transactions.get(position).transaction_amount))
     }

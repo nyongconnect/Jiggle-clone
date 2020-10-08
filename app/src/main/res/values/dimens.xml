@@ -12,18 +12,18 @@
 
 
 <!--    newly declared text dimens-->
-    <dimen name="welcome_text_size">18sp</dimen>
-    <dimen name="hide_balance_text_size">11sp</dimen>
-    <dimen name="heading_text_size">14sp</dimen>
+    <dimen name="welcome_text_size">20sp</dimen>
+    <dimen name="hide_balance_text_size">13sp</dimen>
+    <dimen name="heading_text_size">16sp</dimen>
 
-    <dimen name="update_body_text_size">10sp</dimen>
-    <dimen name="update_button_text_size">9sp</dimen>
+    <dimen name="update_body_text_size">12sp</dimen>
+    <dimen name="update_button_text_size">11sp</dimen>
 
-    <dimen name="pay_bill_body_text_size">12sp</dimen>
+    <dimen name="pay_bill_body_text_size">14sp</dimen>
 
-    <dimen name="meal_budget_text_size">13sp</dimen>
+    <dimen name="meal_budget_text_size">14sp</dimen>
 
-    <dimen name="today_text_size">15sp</dimen>
+    <dimen name="today_text_size">17sp</dimen>
 
 
 
